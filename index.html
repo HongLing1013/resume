@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作品集</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- 上方導覽 -->
+    <header>
+        <a href="#" class="logo">LOGO</a>
+        <ul>
+            <li><a href="#">首頁</a></li>
+            <li><a href="#About">About Me</a></li>
+            <li><a href="#">作品</a></li>
+            <li><a href="#">聯繫</a></li>
+            <li><a href="#">登入</a></li>
+        </ul>
+    </header>
+
+    <!-- banner -->
+    <h2 class="title">Scroll To See Hollie's 作品集....</h2>
+    <section class="banner"></section>
+
+    <!-- 關於我 -->
+    <div class="container1">
+        <h2 id="About">About Me</h2>
+        <p>我是妅翎,請多指教</p>
+    </div>
+    
+    <!-- 上方導覽的JS -->
+    <script>
+        window.addEventListener('scroll', () => {
+            let header = document.querySelector('header')
+            header.classList.toggle('sticky', window.scrollY > 0)
+        })
+    </script>
+
+    <!-- 圖片的JS -->
+    <script>
+        let section = document.querySelector('section');
+        window.addEventListener('scroll', function() {
+            let value = window.scrollY;
+            section.style.clipPath = `circle(${value}px at center)`;
+        })
+    </script>
+</body>
+</html>
