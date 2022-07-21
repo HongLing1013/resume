@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>作品集</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/97604f290f.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- 上方導覽 -->
-    <header>
+    <nav>
         <a href="#" class="logo">LOGO</a>
         <ul>
             <li><a href="#">首頁</a></li>
@@ -18,33 +19,58 @@
             <li><a href="#">聯繫</a></li>
             <li><a href="#">登入</a></li>
         </ul>
-    </header>
+    </nav>
 
     <!-- banner -->
     <h2 class="title">Scroll To See Hollie's Resume....</h2>
-    <section class="banner"></section>
+    <header class="banner"></header>
 
     <!-- 關於我 -->
-    <aside class="container1">
+    <article class="container1">
         <div class="aboutBox">
             <img src="./img/my.jpg" style="float:left;margin:0 10vw">
-            <h2 id="About">About Me</h2>
+            <p id="About" class="text">About Me</p>
             <p>過去都是從事服務業，這次疫情太嚴重而導致失業，想尋求一個可以永續的工作，參加了泰山職訓的甄試便開始學習程式技術，在學習程式的過程中找到了興趣，希望未來能從事相關工作與團隊一起努力！</p>
         </div>
-    </aside>
+    </article>
 
     <hr>
 
     <!-- 程式碼區 -->
-    <main style="clear:both">
+    <section style="clear:both">
+        <p class="text" style="text-align: center;line-height: 7rem;">Skill</p>
         <div class="codeBox">
             <div class="code">
-                各種程式碼
+                <i class="fas fa-desktop fa-3x"></i>
+                <div class="text-center">HTML5</div>
+                <div class="text-center">CSS3</div>
+                <div class="text-center">Bootstrap</div>
+                <div class="text-center">Java Script</div>
+                <div class="text-center">jQuery</div>
+            </div>
+            <div class="code">
+                    <i class="fas fa-code fa-3x"></i>
+                <div class="text-center">PHP</div>
+                <div class="text-center">MySQL</div>
+            </div>
+            <div class="code">
+                <i class="fas fa-paint-brush fa-3x"></i>
+                <div class="text-center">Illustrator</div>
+                <div class="text-center">Photoshop</div>
             </div>
         </div>
-    </main>
+    </section>
 
     <!-- 作品區 -->
+    <main>
+
+    </main>
+
+
+    <!-- 聯絡方式 -->
+    <aside>
+
+    </aside>
 
     <!-- 尾版 -->
     <footer>
@@ -54,17 +80,17 @@
     <!-- 上方導覽的JS -->
     <script>
         window.addEventListener('scroll', () => {
-            let header = document.querySelector('header')
-            header.classList.toggle('sticky', window.scrollY > 0)
+            let nav = document.querySelector('nav')
+            nav.classList.toggle('sticky', window.scrollY > 0)
         })
     </script>
 
     <!-- banner的JS -->
     <script>
-        let section = document.querySelector('section');
+        let header = document.querySelector('header');
         window.addEventListener('scroll', function() {
             let value = window.scrollY;
-            section.style.clipPath = `circle(${value}px at center)`;
+            header.style.clipPath = `circle(${value}px at center)`;
         })
     </script>
 </body>

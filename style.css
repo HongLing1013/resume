@@ -12,7 +12,7 @@
     }
 
     /* 上方導覽開始 */
-    header{
+    nav{
         position: fixed;
         top: 0;
         left: 0;
@@ -25,13 +25,13 @@
         z-index: 2;
     }
 
-    header.sticky{
+    nav.sticky{
 
         padding: 5px 100px;
         background: #fff;
     }
 
-    header .logo{
+    nav .logo{
         position: relative;
         font-weight: 700;
         color: #fff;
@@ -42,19 +42,19 @@
         transition: 0;
     }
 
-    header ul {
+    nav ul {
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    header ul li{
+    nav ul li{
         position: relative;
         list-style: none;
     }
     
-    header ul li a{
+    nav ul li a{
         position: relative;
         margin: 0 15px;
         text-decoration: none;
@@ -64,8 +64,8 @@
         transition: 0.5s;
     }
 
-    header.sticky.logo,
-    header.sticky ul li a{
+    nav.sticky.logo,
+    nav.sticky ul li a{
         color: #000;
     }
 
@@ -106,13 +106,14 @@
         padding: 100px;
     }
 
-    .container1 h2{
+    .text{
         font-size: 2.5em;
         margin-bottom: 20px; /*標題文字與下方文字推開*/
+        text-shadow: 3px -2px 2px #ccc;
     }
 
     /* code區 */
-    main{
+    section{
         position: relative;
         top: 0;
         left: 0;
@@ -125,12 +126,20 @@
 
     .codeBox{
         position: relative;
+        margin: 0 15vw;
+    }
+    
+    .code{
+        position: relative;
+        flex-wrap: wrap;
+        display: inline-block;
         top: 10vh;
-        margin: 0vh 25vw;
-        background: rgba(0, 0, 0, 0.493);
-        width: 60vw;
-        height: 60vh;
+        margin: 0vh 1vw;
+        background: rgba(228, 227, 227, 0.493);
+        width: 20vw;
+        height: 40vh;
         border-radius: 16px;
+
     }
 
     /* 尾版 */
