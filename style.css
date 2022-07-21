@@ -4,6 +4,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     font-family: sans-serif;
+    text-transform: uppercase;
     }
 
     body{
@@ -26,9 +27,8 @@
     }
 
     nav.sticky{
-
         padding: 5px 100px;
-        background: #fff;
+        background: rgba(255, 255, 255, 0.745);
     }
 
     nav .logo{
@@ -104,6 +104,7 @@
         margin-top: 150vh; /*把文字用margin-top推下去*/
         background: #fff; /*設定文字背景(覆蓋圖片)*/
         padding: 100px;
+        height: 100vh;
     }
 
     .text{
@@ -126,21 +127,30 @@
 
     .codeBox{
         position: relative;
-        margin: 0 15vw;
+        margin: 0 10vw;
     }
     
     .code{
         position: relative;
         flex-wrap: wrap;
         display: inline-block;
-        top: 10vh;
-        margin: 0vh 1vw;
+        top: 5vh;
+        margin: 0vh 2vw;
         background: rgba(228, 227, 227, 0.493);
         width: 20vw;
         height: 40vh;
         border-radius: 16px;
-
+        text-align: center;
     }
+
+    .code>i{
+        margin: 2rem 0;
+    }
+
+    .code>p{
+        line-height: 1.8rem;
+    }
+
 
     /* 尾版 */
     footer{
