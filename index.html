@@ -21,14 +21,35 @@
     </header>
 
     <!-- banner -->
-    <h2 class="title">Scroll To See Hollie's 作品集....</h2>
+    <h2 class="title">Scroll To See Hollie's Resume....</h2>
     <section class="banner"></section>
 
     <!-- 關於我 -->
-    <div class="container1">
-        <h2 id="About">About Me</h2>
-        <p>我是妅翎,請多指教</p>
-    </div>
+    <aside class="container1">
+        <div class="aboutBox">
+            <img src="./img/my.jpg" style="float:left;margin:0 10vw">
+            <h2 id="About">About Me</h2>
+            <p>過去都是從事服務業，這次疫情太嚴重而導致失業，想尋求一個可以永續的工作，參加了泰山職訓的甄試便開始學習程式技術，在學習程式的過程中找到了興趣，希望未來能從事相關工作與團隊一起努力！</p>
+        </div>
+    </aside>
+
+    <hr>
+
+    <!-- 程式碼區 -->
+    <main style="clear:both">
+        <div class="codeBox">
+            <div class="code">
+                各種程式碼
+            </div>
+        </div>
+    </main>
+
+    <!-- 作品區 -->
+
+    <!-- 尾版 -->
+    <footer>
+        Copyright©2021 Hollie Chao
+    </footer>
     
     <!-- 上方導覽的JS -->
     <script>
@@ -38,7 +59,7 @@
         })
     </script>
 
-    <!-- 圖片的JS -->
+    <!-- banner的JS -->
     <script>
         let section = document.querySelector('section');
         window.addEventListener('scroll', function() {
