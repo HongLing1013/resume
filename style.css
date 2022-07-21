@@ -129,6 +129,8 @@ body{
     .codeBox{
         position: relative;
         margin: 0 10vw;
+        display: flex;
+        /* transform: translateY(20%); */
     }
     
     .code{
