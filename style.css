@@ -103,7 +103,7 @@ body{
         position: relative;
         margin-top: 150vh; /*把文字用margin-top推下去*/
         background: #fff; /*設定文字背景(覆蓋圖片)*/
-        padding: 100px;
+        padding: 100px ;
         height: 100vh;
     }
     
@@ -120,7 +120,7 @@ body{
         top: 0;
         left: 0;
         width: 100%;
-        height: 100vh;
+        height: 94vh;
         background: url(./img/595112.jpeg);
         background-size: 100%;
         background-repeat: no-repeat;
@@ -154,10 +154,23 @@ body{
         line-height: 1.8rem;
     }
 
+    /* 作品區 */
+    main{
+        background: #fff;
+    }
 
     /* 尾版 */
     footer{
         position: relative;
         background: rgba(0, 0, 0, 0.534);
         color: #ccc;
+    }
+
+    .container2{
+        position: relative;
+        margin-top: 0vh;
+        background: #fff; /*設定文字背景(覆蓋圖片)*/
+        padding: 100px;
+        height: 100vh;
+
     }
