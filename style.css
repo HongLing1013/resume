@@ -93,7 +93,7 @@ body{
     
     /* 自我介紹區 */
     
-    .aboutBox{
+    .Box{
         margin-left: 5vw;
         margin-right: 10vw;
         height: 45vh;
@@ -172,5 +172,15 @@ body{
         background: #fff; /*設定文字背景(覆蓋圖片)*/
         padding: 100px;
         height: 100vh;
+    }
 
+    .por{
+        margin-top: 10vh;
+    }
+
+    .por>a{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10vh;
     }
