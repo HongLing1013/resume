@@ -170,8 +170,8 @@ body{
         position: relative;
         margin-top: 0vh;
         background: #fff; /*設定文字背景(覆蓋圖片)*/
-        padding: 100px;
-        height: 100vh;
+        /* padding: 100px; */
+        height: 700vh;
     }
 
     .por{
