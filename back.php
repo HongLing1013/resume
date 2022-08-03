@@ -52,7 +52,20 @@
 
 	<div class="center">
 		<h1>作品管理</h1>
-		<input type="text" name="img" id="img">
+		<table>
+			<tr>
+				<td>圖片</td>
+				<td>網址</td>
+				<td>顯示</td>
+				<td>更換圖片</td>
+			</tr>
+			<tr>
+				<td>圖片</td>
+				<td>網址</td>
+				<td>顯示</td>
+				<td>更換圖片</td>
+			</tr>
+		</table>
 	</div>
 
 </body>
