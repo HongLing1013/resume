@@ -1,5 +1,2 @@
 admin //帳號密碼　　id acc pw
-bg //風景圖　　id img sh
-banner //上方圖片　　id img sh
-my //履歷旁的照片跟文字　id img text sh
 repository //作品 id img href sh

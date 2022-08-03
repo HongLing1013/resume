@@ -16,27 +16,9 @@ if(!empty($_POST['id'])){/* 判定有沒有id送過來
       $row=$DB->find($id);/* 先撈資料 */
       
       switch($_POST['table']){/* 針對不同table各自分別處理 */
-        case "title":
-          $row['text']=$_POST['text'][$idx];/* 更新文字欄位 */
-          $row['sh']=(isset($_POST['sh']) && $_POST['sh']==$id)?1:0;/* POST的sh如果有勾選 (存在)
-                                                                       並且與id相符
-                                                                       就將它設為1 否則為0 */
-        break;
-        case "admin":
-          $row['acc']=$_POST['acc'][$idx];/* 更新帳號欄位 */
-          $row['pw']=$_POST['pw'][$idx];/* 更新密碼欄位 */
-        break;
-        case "menu":
-          $row['text']=$_POST['text'][$idx];
+        case "repository":
+          $row['img']=$_POST['img'][$idx];
           $row['href']=$_POST['href'][$idx];
-          $row['sh']=(isset($_POST['sh']) && in_array($id,$_POST['sh']))?1:0;
-        case "ad":
-        case "news":
-          $row['text']=$_POST['text'][$idx];
-          $row['sh']=(isset($_POST['sh']) && in_array($id,$_POST['sh']))?1:0;
-        break;
-        case "image":
-        case "mvim":
           $row['sh']=(isset($_POST['sh']) && in_array($id,$_POST['sh']))?1:0;
         break;
       }

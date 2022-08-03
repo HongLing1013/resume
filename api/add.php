@@ -17,9 +17,6 @@ if(isset($_POST['text'])){/* 如果有文字的話
 
 switch($_POST['table']){/* 針對table的內容
                            不同的資料型態有不同的處理方式 */
-  case 'my':
-    $data['sh']=0;
-    break;
   case 'admin':
     $data['acc']=$_POST['acc'];
     $data['pw']=$_POST['pw'];
@@ -29,8 +26,6 @@ switch($_POST['table']){/* 針對table的內容
     $data['href']=$_POST['href'];
     $data['sh']=1;
     break;
-  default:
-    $data['sh']=1;
 }
 
 $DB->save($data);
