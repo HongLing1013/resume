@@ -44,10 +44,10 @@ if(isset($_SESSION['login'])){
 			align-items: center;
 			padding: 10vh;
 			border: 1px solid #6663;
-			border-radius: 15px;
+			border-radius: 5px;
 		}
 		input{
-			border-radius: 15px;
+			border-radius: 2px;
 			border: 1px solid #6663;
 			background: transparent;
 		}
