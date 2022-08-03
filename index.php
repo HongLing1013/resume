@@ -1,3 +1,7 @@
+<?php
+include "base.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,14 +15,22 @@
 <body>
     <!-- 上方導覽 -->
     <nav>
-        <a href="#" class="logo">LOGO</a>
+        <a href="index.php" class="logo">Hollie Chao</a>
         <ul>
-            <li><a href="#">首頁</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skill">skill</a></li>
             <li><a href="#portfolio">portfolio</a></li>
-            <li><a href="#">聯繫</a></li>
-            <li><a href="#">登入</a></li>
+            <?php
+			if(isset($_SESSION['login'])){
+			?>
+            <li><a href="./api/logout.php">登出</a></li>
+            <?php
+			}else{
+			?>
+            <li><a href="./front/login.php">登入</a></li>
+			<?php
+			}
+			?>
         </ul>
     </nav>
 
@@ -74,12 +86,6 @@
             <a href="https://www.flickr.com/photos/196142177@N08/52232862613/in/dateposted-public/"><img src="./img/ps-3.jpg" alt=""></a>
         </div>
     </main>
-
-
-    <!-- 聯絡方式 -->
-    <aside>
-
-    </aside>
 
     <!-- 尾版 -->
     <footer>

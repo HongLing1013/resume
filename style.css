@@ -34,7 +34,7 @@ body{
     nav .logo{
         position: relative;
         font-weight: 700;
-        color: #fff;
+        color: #333;
         text-decoration: none;
         font-size: 2em;
         text-transform: uppercase;
@@ -171,7 +171,7 @@ body{
         margin-top: 0vh;
         background: #fff; /*設定文字背景(覆蓋圖片)*/
         /* padding: 100px; */
-        height: 700vh;
+        height: 600vh;
     }
 
     .por{
@@ -183,4 +183,10 @@ body{
         flex-wrap: wrap;
         justify-content: center;
         margin-top: 10vh;
+    }
+
+    aside{
+        background: rgba(51, 51, 51, 0.516);
+        height: 80vh;
+        width: 100%;
     }
