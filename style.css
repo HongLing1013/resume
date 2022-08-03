@@ -175,14 +175,13 @@ body{
     }
 
     .por{
-        margin-top: 10vh;
-    }
-
-    .por>a{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin-top: 10vh;
+    }
+
+    .por>a{
+        margin: 0 3vw 5vw 10vw;
     }
 
     aside{

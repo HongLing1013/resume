@@ -23,11 +23,11 @@ include "base.php";
             <?php
 			if(isset($_SESSION['login'])){
 			?>
-            <li><a href="./api/logout.php">登出</a></li>
+            <li><a href="./api/logout.php">logout</a></li>
             <?php
 			}else{
 			?>
-            <li><a href="./front/login.php">登入</a></li>
+            <li><a href="./front/login.php">login</a></li>
 			<?php
 			}
 			?>
