@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主機： 127.0.0.1
--- 產生時間： 2022-07-22 06:51:07
+-- 產生時間： 2022-08-04 06:37:22
 -- 伺服器版本： 10.4.24-MariaDB
 -- PHP 版本： 8.1.6
 
@@ -43,43 +43,6 @@ INSERT INTO `admin` (`id`, `acc`, `pw`) VALUES
 -- --------------------------------------------------------
 
 --
--- 資料表結構 `banner`
---
-
-CREATE TABLE `banner` (
-  `id` int(11) UNSIGNED NOT NULL,
-  `img` varchar(128) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '上方圖片',
-  `sh` int(1) UNSIGNED NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
--- --------------------------------------------------------
-
---
--- 資料表結構 `bg`
---
-
-CREATE TABLE `bg` (
-  `id` int(11) UNSIGNED NOT NULL,
-  `img` varchar(128) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '中間圖片',
-  `sh` int(1) UNSIGNED NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
--- --------------------------------------------------------
-
---
--- 資料表結構 `my`
---
-
-CREATE TABLE `my` (
-  `id` int(11) UNSIGNED NOT NULL,
-  `img` varchar(128) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '履歷照片',
-  `text` varchar(128) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '履歷文字',
-  `sh` int(1) UNSIGNED NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
--- --------------------------------------------------------
-
---
 -- 資料表結構 `repository`
 --
 
@@ -91,6 +54,21 @@ CREATE TABLE `repository` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+-- 傾印資料表的資料 `repository`
+--
+
+INSERT INTO `repository` (`id`, `img`, `href`, `sh`) VALUES
+(1, 'bmi.jpg', 'http://220.128.133.15/s1110208/BMI/', 0),
+(2, 'bmi.jpg', 'http://220.128.133.15/s1110208/BMI/', 0),
+(3, '', 'http://220.128.133.15/s1110208/BMI/', 1),
+(4, '', 'http://220.128.133.15/s1110208/BMI/', 1),
+(5, '', 'http://220.128.133.15/s1110208/BMI/', 1),
+(6, '', 'http://220.128.133.15/s1110208/BMI/', 1),
+(7, 'edrerer', 'fgtgfgfgf', 1),
+(8, '', 'http://220.128.133.15/s1110208/BMI/', 1),
+(9, '595112.jpeg', 'http://220.128.133.15/s1110208/BMI/', 1);
+
+--
 -- 已傾印資料表的索引
 --
 
@@ -98,24 +76,6 @@ CREATE TABLE `repository` (
 -- 資料表索引 `admin`
 --
 ALTER TABLE `admin`
-  ADD PRIMARY KEY (`id`);
-
---
--- 資料表索引 `banner`
---
-ALTER TABLE `banner`
-  ADD PRIMARY KEY (`id`);
-
---
--- 資料表索引 `bg`
---
-ALTER TABLE `bg`
-  ADD PRIMARY KEY (`id`);
-
---
--- 資料表索引 `my`
---
-ALTER TABLE `my`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -135,28 +95,10 @@ ALTER TABLE `admin`
   MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- 使用資料表自動遞增(AUTO_INCREMENT) `banner`
---
-ALTER TABLE `banner`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
-
---
--- 使用資料表自動遞增(AUTO_INCREMENT) `bg`
---
-ALTER TABLE `bg`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
-
---
--- 使用資料表自動遞增(AUTO_INCREMENT) `my`
---
-ALTER TABLE `my`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
-
---
 -- 使用資料表自動遞增(AUTO_INCREMENT) `repository`
 --
 ALTER TABLE `repository`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
