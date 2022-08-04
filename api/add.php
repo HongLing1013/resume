@@ -1,3 +1,5 @@
+
+
 <?php
 include_once "../base.php";
 $DB=new DB($_POST['table']);
@@ -10,9 +12,9 @@ if(isset($_FILES['img']['tmp_name'])){/* 如果路徑存在 表示上傳成功
   $data['img']=$_FILES['img']['name'];
 }
 
-if(isset($_POST['text'])){/* 如果有文字的話
+if(isset($_POST['href'])){/* 如果有文字的話
                              就在裡面加上文字內容 */
-  $data['text']=$_POST['text'];
+  $data['href']=$_POST['href'];
 }
 
 switch($_POST['table']){/* 針對table的內容
@@ -22,11 +24,12 @@ switch($_POST['table']){/* 針對table的內容
     $data['pw']=$_POST['pw'];
     break;
   case 'repository':
-    $data['img']=$_POST['img'];
     $data['href']=$_POST['href'];
     $data['sh']=1;
     break;
 }
+
+// dd($_POST);
 
 $DB->save($data);
 

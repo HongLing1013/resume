@@ -98,7 +98,6 @@ if (!isset($_SESSION['login'])) {
 		<div id="left">
 			<a class="menu" href="?do=add">add</a>
 			<a class="menu" href="?do=edit">edit</a>
-			<a class="menu" href="?do=del">delete</a>
 		</div>
 
 

@@ -141,7 +141,7 @@ class DB
       $sql="INSERT INTO $this->table (`".join("`,`",array_keys($array))."`) values('".join("','",$array)."')";
     }
 
-    // echo $sql; //測試用的echo
+    echo $sql; //測試用的echo
 
     // 回傳
     return $this->pdo->exec($sql);/* 不須回傳所以使用exec
