@@ -81,6 +81,14 @@ include "base.php";
             <a href="http://220.128.133.15/s1110208/PerpetualCalendar-HomeWork/"><img src="./img/calendar.jpg" alt=""></a>
             <a href="http://220.128.133.15/s1110208/Vote/"><img src="./img/vote.jpg" alt=""></a>
             <a href="http://220.128.133.15/s1110208/BMI/"><img src="./img/bmi.jpg" alt=""></a>
+            <a href="http://220.128.133.15/s1110208/spaceGame/"><img src="./img/space.jpg" alt=""></a>
+            <a href="http://220.128.133.15/s1110208/toneso/"><img src="./img/toneso.jpg" alt=""></a>
+            <a href="http://220.128.133.15/s1110208/analogClock/"><img src="./img/analogClock.jpg" alt=""></a>
+            <a href="http://220.128.133.15/s1110208/cat/"><img src="./img/cat.jpg" alt=""></a>
+            <a href="http://220.128.133.15/s1110208/clock/"><img src="./img/clock.jpg" alt=""></a>
+            <a href="http://220.128.133.15/s1110208/colorShape/"><img src="./img/colorShape.jpg" alt=""></a>
+            <a href="http://220.128.133.15/s1110208/colorEdit/"><img src="./img/colorEdit.jpg" alt=""></a>
+            <a href="http://220.128.133.15/s1110208/bs-resume/"><img src="./img/bsResume.jpg" alt=""></a>
             <a href="https://www.flickr.com/photos/196142177@N08/52233127974/in/dateposted-public/"><img src="./img/ps-2.jpg" alt=""></a>
             <a href="https://www.flickr.com/photos/196142177@N08/52232856016/in/dateposted-public/"><img src="./img/ps-1.jpg" alt=""></a>
             <a href="https://www.flickr.com/photos/196142177@N08/52232862613/in/dateposted-public/"><img src="./img/ps-3.jpg" alt=""></a>
