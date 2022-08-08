@@ -71,6 +71,10 @@ if (!isset($_SESSION['login'])) {
               inset 2px 2px 4px rgba(255, 255, 255, 0.5),
               inset 2px 2px 8px rgba(0, 0, 0, 0.15);
 }
+.content{
+	width: 250%;
+	height: 80%;
+}
 	</style>
 </head>
 
