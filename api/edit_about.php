@@ -1,6 +1,13 @@
 <?php
 include_once "../base.php";
 
+if(isset($_FILES['img']['tmp_name'])){/* 如果路徑存在 表示上傳成功
+  就要把檔案從暫存的目錄移至img中
+  檔名就是上傳時的黨名 */
+move_uploaded_file($_FILES['img']['tmp_name'],"../img/".$_FILES['img']['name']);
+$data['img']=$_FILES['img']['name'];
+}
+
 //編輯和刪除,依據$_POST['id']
 
 if(!empty($_POST['id'])){/* 判定有沒有id送過來
@@ -12,12 +19,13 @@ foreach ($_POST['id'] as $idx => $id){/* 因為post傳來的資料是id
 if(isset($_POST['del']) && in_array($id,$_POST['del'])){/* 判斷有沒有資料需要刪除
                                      並用in_array判斷迴圈輪到的這個id是否有在POST裡面del的陣列中
                                      如果有表示這筆資料需要刪除 */
-$Repo->del($id);
+$About->del($id);
 }else{
-$row=$Repo->find($id);///只有下面這兩個資料需要變更
-$row['img']=$_POST['img'][$idx];
-$row['href']=$_POST['href'][$idx];
-$Repo->save($row);/* 更新後儲存 */
+$row=$About->find($id);///只有下面這兩個資料需要變更
+
+$row['img']=$data['img'];
+$row['text']=$_POST['text'][$idx];
+$About->save($row);/* 更新後儲存 */
 }
 }
 }
@@ -36,5 +44,5 @@ if(isset($_POST['text2'])){/* 判斷選單文字是否存在 */
   }
 }
 
-to("../back.php?do=menu");
+to("../back.php?do=about");
 ?>

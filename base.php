@@ -212,5 +212,6 @@ function dd($array){
 
 $Admin=new DB('admin');
 $Repo=new DB('repository');
+$About=new DB('about');
 
 ?>
