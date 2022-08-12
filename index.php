@@ -24,6 +24,7 @@ include "base.php";
 			if(isset($_SESSION['login'])){
 			?>
             <li><a href="./api/logout.php">logout</a></li>
+            <li><a href="./back.php">back</a></li>
             <?php
 			}else{
 			?>
