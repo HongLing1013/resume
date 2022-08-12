@@ -42,9 +42,16 @@ include "base.php";
     <!-- 關於我 -->
     <article class="container1" id="about">
         <div class="Box">
-            <img src="./img/my.jpg" style="float:left;margin:0 10vw">
+        <?php
+            $rows=$About->all();
+            foreach($rows as $row){
+        ?>
+        <img src="./img/<?=$row['img'];?>" style="float:left;margin:0 10vw">
             <p class="text">About Me</p>
-            <p>過去都是從事服務業，這次疫情太嚴重而導致失業，想尋求一個可以永續的工作，參加了泰山職訓的甄試便開始學習程式技術，在學習程式的過程中找到了興趣，希望未來能從事相關工作與團隊一起努力！</p>
+            <p><?=$row['text'];?></p>
+            <?php
+        }
+        ?>
         </div>
     </article>
 
@@ -92,7 +99,7 @@ include "base.php";
 
     <!-- 尾版 -->
     <footer>
-        Copyright©2021 Hollie Chao
+        Copyright©2022 Hollie Chao
     </footer>
     
     <!-- 上方導覽的JS -->
