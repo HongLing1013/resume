@@ -17,7 +17,7 @@ if(!empty($_POST['id'])){/* 判定有沒有id送過來
       
       switch($_POST['table']){/* 針對不同table各自分別處理 */
         case "repository":
-          $row['img']=$_POST['img'][$idx];
+          // $row['img']=$_POST['img'][$idx];
           $row['href']=$_POST['href'][$idx];
           $row['sh']=(isset($_POST['sh']) && in_array($id,$_POST['sh']))?1:0;
         break;
