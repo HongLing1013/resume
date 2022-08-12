@@ -103,7 +103,6 @@ if (!isset($_SESSION['login'])) {
 			<a class="menu" href="?do=add">add</a>
 			<a class="menu" href="?do=edit">edit</a>
 			<a class="menu" href="?do=about">about</a>
-			<a class="menu" href="?do=bg">bg</a>
 		</div>
 
 
