@@ -79,20 +79,14 @@ include "base.php";
     <main id="portfolio" class="container2">
         <p class="text" style="text-align: center;line-height: 30vh;">portfolio</p>
         <div class="por">
-            <a href="http://220.128.133.15/s1110208/PerpetualCalendar-HomeWork/" target="_blank"><img src="./img/calendar.jpg" alt=""></a>
-            <a href="http://220.128.133.15/s1110208/Vote/" target="_blank"><img src="./img/vote.jpg" alt=""></a>
-            <a href="http://220.128.133.15/s1110208/BMI/" target="_blank"><img src="./img/bmi.jpg" alt=""></a>
-            <a href="http://220.128.133.15/s1110208/spaceGame/" target="_blank"><img src="./img/space.jpg" alt=""></a>
-            <a href="http://220.128.133.15/s1110208/toneso/" target="_blank"><img src="./img/toneso.jpg" alt=""></a>
-            <a href="http://220.128.133.15/s1110208/analogClock/" target="_blank"><img src="./img/analogClock.jpg" alt=""></a>
-            <a href="http://220.128.133.15/s1110208/cat/" target="_blank"><img src="./img/cat.jpg" alt=""></a>
-            <a href="http://220.128.133.15/s1110208/clock/" target="_blank"><img src="./img/clock.jpg" alt=""></a>
-            <a href="http://220.128.133.15/s1110208/colorShape/" target="_blank"><img src="./img/colorShape.jpg" alt=""></a>
-            <a href="http://220.128.133.15/s1110208/colorEdit/" target="_blank"><img src="./img/colorEdit.jpg" alt=""></a>
-            <a href="http://220.128.133.15/s1110208/bs-resume/" target="_blank"><img src="./img/bsResume.jpg" alt=""></a>
-            <a href="https://www.flickr.com/photos/196142177@N08/52233127974/in/dateposted-public/" target="_blank"><img src="./img/ps-2.jpg" alt=""></a>
-            <a href="https://www.flickr.com/photos/196142177@N08/52232856016/in/dateposted-public/" target="_blank"><img src="./img/ps-1.jpg" alt=""></a>
-            <a href="https://www.flickr.com/photos/196142177@N08/52232862613/in/dateposted-public/" target="_blank"><img src="./img/ps-3.jpg" alt=""></a>
+        <?php
+            $rows=$Repo->all();
+            foreach($rows as $row){
+        ?>
+            <a href="<?=$row['href'];?>" target="_blank"><img src="./img/<?=$row['img'];?>"></a>
+        <?php
+        }
+        ?>
         </div>
     </main>
 
