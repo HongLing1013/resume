@@ -84,7 +84,7 @@ class DB
         $sql .= "WHERE `id` = '$id' ";
       }
 
-    // echo $sql; //測試用的echo
+    echo $sql; //測試用的echo
 
     // 回傳
     return $this->pdo->query($sql)->fetch(PDO::FETCH_ASSOC);/* 上方判斷完 如果沒帶任何參數的話 

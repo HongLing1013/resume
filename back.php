@@ -19,7 +19,7 @@ if (!isset($_SESSION['login'])) {
 	<style>
 		body {
 			background: #fff;
-			overflow: hidden;
+			/* overflow: hidden; */
 		}
 
 		nav {
@@ -72,7 +72,7 @@ if (!isset($_SESSION['login'])) {
               inset 2px 2px 8px rgba(0, 0, 0, 0.15);
 }
 .content{
-	width: 250%;
+	width: 200%;
 	height: 80%;
 }
 	</style>
@@ -102,24 +102,26 @@ if (!isset($_SESSION['login'])) {
 		<div id="left">
 			<a class="menu" href="?do=add">add</a>
 			<a class="menu" href="?do=edit">edit</a>
+			<a class="menu" href="?do=about">about</a>
+			<a class="menu" href="?do=bg">bg</a>
 		</div>
 
 
-		<div>
-			<div class="content">
-				<!-- 預防用戶亂塞資料try網站 -->
-				<?php
-				$do = $_GET['do'] ?? 'add';
-				$file = "./back/" . $do . ".php";
-				if (file_exists($file)) {
-					include $file;
-				} else {
-					include "./back/add.php";
-				}
-				?>
-			</div>
+	</div>
+	<div>
+		<div class="content">
+			<!-- 預防用戶亂塞資料try網站 -->
+			<?php
+			$do = $_GET['do'] ?? 'add';
+			$file = "./back/" . $do . ".php";
+			if (file_exists($file)) {
+				include $file;
+			} else {
+				include "./back/add.php";
+			}
+			?>
 		</div>
-	</article>
+</article>
 
 
 	<!-- 上方導覽的JS -->
