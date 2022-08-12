@@ -1,5 +1,5 @@
 <?php
-include "base.php";
+include_once "base.php";
 ?>
 
 <!DOCTYPE html>
@@ -23,8 +23,8 @@ include "base.php";
             <?php
 			if(isset($_SESSION['login'])){
 			?>
-            <li><a href="./api/logout.php">logout</a></li>
             <li><a href="./back.php">back</a></li>
+            <li><a href="./api/logout.php">logout</a></li>
             <?php
 			}else{
 			?>

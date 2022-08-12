@@ -2,13 +2,12 @@
 // 設定時區
 date_default_timezone_set('Asia/Taipei');
 session_start();
-
 class DB 
 { 
   //連線資料庫
-  protected $dsn="mysql:host=localhost;charset=utf8;dbname=resume";
-  protected $user='root';
-  protected $pw='';
+  protected $dsn="mysql:host=localhost;charset=utf8;dbname=s1110208";
+  protected $user='s1110208';
+  protected $pw='s1110208';
   public $table;
   protected $pdo;
 
@@ -209,6 +208,7 @@ function dd($array){
   print_r($array);
   echo "</pre>";
 }
+
 
 $Admin=new DB('admin');
 $Repo=new DB('repository');
